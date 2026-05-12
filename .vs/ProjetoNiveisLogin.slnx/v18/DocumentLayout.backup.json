@@ -1,17 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\3mtec\\Desktop\\ProjetoNiveisLogin\\",
+  "WorkspaceRootPath": "C:\\Users\\2amod\\Desktop\\NivelLogin\\ProjetoNiveisLogin\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6758EBF1-8EF3-2F28-BE5F-9F36B0DF7C19}|ProjetoNiveisLogin\\ProjetoNiveisLogin.csproj|c:\\users\\3mtec\\desktop\\projetoniveislogin\\projetoniveislogin\\models\\colaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6758EBF1-8EF3-2F28-BE5F-9F36B0DF7C19}|ProjetoNiveisLogin\\ProjetoNiveisLogin.csproj|c:\\users\\2amod\\desktop\\nivellogin\\projetoniveislogin\\projetoniveislogin\\repository\\clienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6758EBF1-8EF3-2F28-BE5F-9F36B0DF7C19}|ProjetoNiveisLogin\\ProjetoNiveisLogin.csproj|solutionrelative:projetoniveislogin\\repository\\clienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6758EBF1-8EF3-2F28-BE5F-9F36B0DF7C19}|ProjetoNiveisLogin\\ProjetoNiveisLogin.csproj|c:\\users\\2amod\\desktop\\nivellogin\\projetoniveislogin\\projetoniveislogin\\repository\\contract\\iclienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6758EBF1-8EF3-2F28-BE5F-9F36B0DF7C19}|ProjetoNiveisLogin\\ProjetoNiveisLogin.csproj|solutionrelative:projetoniveislogin\\repository\\contract\\iclienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6758EBF1-8EF3-2F28-BE5F-9F36B0DF7C19}|ProjetoNiveisLogin\\ProjetoNiveisLogin.csproj|c:\\users\\2amod\\desktop\\nivellogin\\projetoniveislogin\\projetoniveislogin\\models\\constants\\situacaoconstant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6758EBF1-8EF3-2F28-BE5F-9F36B0DF7C19}|ProjetoNiveisLogin\\ProjetoNiveisLogin.csproj|solutionrelative:projetoniveislogin\\models\\constants\\situacaoconstant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6758EBF1-8EF3-2F28-BE5F-9F36B0DF7C19}|ProjetoNiveisLogin\\ProjetoNiveisLogin.csproj|c:\\users\\2amod\\desktop\\nivellogin\\projetoniveislogin\\projetoniveislogin\\models\\constants\\colaboradortipoconstant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6758EBF1-8EF3-2F28-BE5F-9F36B0DF7C19}|ProjetoNiveisLogin\\ProjetoNiveisLogin.csproj|solutionrelative:projetoniveislogin\\models\\constants\\colaboradortipoconstant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6758EBF1-8EF3-2F28-BE5F-9F36B0DF7C19}|ProjetoNiveisLogin\\ProjetoNiveisLogin.csproj|c:\\users\\2amod\\desktop\\nivellogin\\projetoniveislogin\\projetoniveislogin\\models\\colaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6758EBF1-8EF3-2F28-BE5F-9F36B0DF7C19}|ProjetoNiveisLogin\\ProjetoNiveisLogin.csproj|solutionrelative:projetoniveislogin\\models\\colaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6758EBF1-8EF3-2F28-BE5F-9F36B0DF7C19}|ProjetoNiveisLogin\\ProjetoNiveisLogin.csproj|c:\\users\\3mtec\\desktop\\projetoniveislogin\\projetoniveislogin\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6758EBF1-8EF3-2F28-BE5F-9F36B0DF7C19}|ProjetoNiveisLogin\\ProjetoNiveisLogin.csproj|c:\\users\\2amod\\desktop\\nivellogin\\projetoniveislogin\\projetoniveislogin\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6758EBF1-8EF3-2F28-BE5F-9F36B0DF7C19}|ProjetoNiveisLogin\\ProjetoNiveisLogin.csproj|solutionrelative:projetoniveislogin\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6758EBF1-8EF3-2F28-BE5F-9F36B0DF7C19}|ProjetoNiveisLogin\\ProjetoNiveisLogin.csproj|c:\\users\\3mtec\\desktop\\projetoniveislogin\\projetoniveislogin\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{6758EBF1-8EF3-2F28-BE5F-9F36B0DF7C19}|ProjetoNiveisLogin\\ProjetoNiveisLogin.csproj|c:\\users\\2amod\\desktop\\nivellogin\\projetoniveislogin\\projetoniveislogin\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{6758EBF1-8EF3-2F28-BE5F-9F36B0DF7C19}|ProjetoNiveisLogin\\ProjetoNiveisLogin.csproj|solutionrelative:projetoniveislogin\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
@@ -27,36 +43,88 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ClienteRepository.cs",
+              "DocumentMoniker": "C:\\Users\\2amod\\Desktop\\NivelLogin\\ProjetoNiveisLogin\\ProjetoNiveisLogin\\Repository\\ClienteRepository.cs",
+              "RelativeDocumentMoniker": "ProjetoNiveisLogin\\Repository\\ClienteRepository.cs",
+              "ToolTip": "C:\\Users\\2amod\\Desktop\\NivelLogin\\ProjetoNiveisLogin\\ProjetoNiveisLogin\\Repository\\ClienteRepository.cs",
+              "RelativeToolTip": "ProjetoNiveisLogin\\Repository\\ClienteRepository.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAuwEsAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T11:40:04.829Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IClienteRepository.cs",
+              "DocumentMoniker": "C:\\Users\\2amod\\Desktop\\NivelLogin\\ProjetoNiveisLogin\\ProjetoNiveisLogin\\Repository\\Contract\\IClienteRepository.cs",
+              "RelativeDocumentMoniker": "ProjetoNiveisLogin\\Repository\\Contract\\IClienteRepository.cs",
+              "ToolTip": "C:\\Users\\2amod\\Desktop\\NivelLogin\\ProjetoNiveisLogin\\ProjetoNiveisLogin\\Repository\\Contract\\IClienteRepository.cs",
+              "RelativeToolTip": "ProjetoNiveisLogin\\Repository\\Contract\\IClienteRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T11:29:49.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SituacaoConstant.cs",
+              "DocumentMoniker": "C:\\Users\\2amod\\Desktop\\NivelLogin\\ProjetoNiveisLogin\\ProjetoNiveisLogin\\Models\\Constants\\SituacaoConstant.cs",
+              "RelativeDocumentMoniker": "ProjetoNiveisLogin\\Models\\Constants\\SituacaoConstant.cs",
+              "ToolTip": "C:\\Users\\2amod\\Desktop\\NivelLogin\\ProjetoNiveisLogin\\ProjetoNiveisLogin\\Models\\Constants\\SituacaoConstant.cs",
+              "RelativeToolTip": "ProjetoNiveisLogin\\Models\\Constants\\SituacaoConstant.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T11:15:12.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ColaboradorTipoConstant.cs",
+              "DocumentMoniker": "C:\\Users\\2amod\\Desktop\\NivelLogin\\ProjetoNiveisLogin\\ProjetoNiveisLogin\\Models\\Constants\\ColaboradorTipoConstant.cs",
+              "RelativeDocumentMoniker": "ProjetoNiveisLogin\\Models\\Constants\\ColaboradorTipoConstant.cs",
+              "ToolTip": "C:\\Users\\2amod\\Desktop\\NivelLogin\\ProjetoNiveisLogin\\ProjetoNiveisLogin\\Models\\Constants\\ColaboradorTipoConstant.cs",
+              "RelativeToolTip": "ProjetoNiveisLogin\\Models\\Constants\\ColaboradorTipoConstant.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T11:13:29.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Colaborador.cs",
-              "DocumentMoniker": "C:\\Users\\3mtec\\Desktop\\ProjetoNiveisLogin\\ProjetoNiveisLogin\\Models\\Colaborador.cs",
+              "DocumentMoniker": "C:\\Users\\2amod\\Desktop\\NivelLogin\\ProjetoNiveisLogin\\ProjetoNiveisLogin\\Models\\Colaborador.cs",
               "RelativeDocumentMoniker": "ProjetoNiveisLogin\\Models\\Colaborador.cs",
-              "ToolTip": "C:\\Users\\3mtec\\Desktop\\ProjetoNiveisLogin\\ProjetoNiveisLogin\\Models\\Colaborador.cs",
+              "ToolTip": "C:\\Users\\2amod\\Desktop\\NivelLogin\\ProjetoNiveisLogin\\ProjetoNiveisLogin\\Models\\Colaborador.cs",
               "RelativeToolTip": "ProjetoNiveisLogin\\Models\\Colaborador.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAwCQAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwCIAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-08T13:20:44.609Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Cliente.cs",
-              "DocumentMoniker": "C:\\Users\\3mtec\\Desktop\\ProjetoNiveisLogin\\ProjetoNiveisLogin\\Models\\Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\2amod\\Desktop\\NivelLogin\\ProjetoNiveisLogin\\ProjetoNiveisLogin\\Models\\Cliente.cs",
               "RelativeDocumentMoniker": "ProjetoNiveisLogin\\Models\\Cliente.cs",
-              "ToolTip": "C:\\Users\\3mtec\\Desktop\\ProjetoNiveisLogin\\ProjetoNiveisLogin\\Models\\Cliente.cs",
+              "ToolTip": "C:\\Users\\2amod\\Desktop\\NivelLogin\\ProjetoNiveisLogin\\ProjetoNiveisLogin\\Models\\Cliente.cs",
               "RelativeToolTip": "ProjetoNiveisLogin\\Models\\Cliente.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAIwCcAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAwwCwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-08T12:17:31.456Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\3mtec\\Desktop\\ProjetoNiveisLogin\\ProjetoNiveisLogin\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\2amod\\Desktop\\NivelLogin\\ProjetoNiveisLogin\\ProjetoNiveisLogin\\appsettings.json",
               "RelativeDocumentMoniker": "ProjetoNiveisLogin\\appsettings.json",
-              "ToolTip": "C:\\Users\\3mtec\\Desktop\\ProjetoNiveisLogin\\ProjetoNiveisLogin\\appsettings.json",
+              "ToolTip": "C:\\Users\\2amod\\Desktop\\NivelLogin\\ProjetoNiveisLogin\\ProjetoNiveisLogin\\appsettings.json",
               "RelativeToolTip": "ProjetoNiveisLogin\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",

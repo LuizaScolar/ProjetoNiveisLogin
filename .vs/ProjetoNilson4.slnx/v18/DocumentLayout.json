@@ -52,7 +52,7 @@
               "RelativeDocumentMoniker": "ProjetoNilson4\\Repository\\ClienteRepository.cs",
               "ToolTip": "C:\\Users\\3MTEC\\Documents\\ProjetoNilson4\\ProjetoNilson4\\Repository\\ClienteRepository.cs",
               "RelativeToolTip": "ProjetoNilson4\\Repository\\ClienteRepository.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAIwGcAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGoAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-12T11:33:04.367Z",
               "EditorCaption": ""
@@ -91,7 +91,8 @@
               "RelativeToolTip": "ProjetoNilson4\\Models\\Cliente.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-08T12:17:23.089Z"
+              "WhenOpened": "2026-05-08T12:17:23.089Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

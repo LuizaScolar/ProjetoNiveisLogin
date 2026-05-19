@@ -1,5 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 using ProjetoNilson4.Models;
+using ProjetoNilson4.Models.Constant;
 using ProjetoNilson4.Repository.Contract;
 using System.Data;
 using X.PagedList;
@@ -51,17 +52,60 @@ namespace ProjetoNilson4.Repository
 
         public void Atualizar(Cliente cliente)
         {
-            throw new NotImplementedException();
+            string Situacao = SituacaoConstant.Ativo;
+            using( var conexao = new MySqlConnection(_conexaoMySQL))
+            {
+                conexao.Open();
+                MySqlCommand cmd = new MySqlCommand("update Cliente set Nome=@Nome, Nascimento=@Nascimento, Sexo=@Sexo, CPF=@CPF," + " Telefone=@Telefone, Email=@Email, Senha=@Senha, Situacao=@Situacao where Id=@Id", conexao);
+
+                cmd.Parameters.Add("@Id", MySqlDbType.VarChar).Value = cliente.Id;
+                cmd.Parameters.Add("@Nome", MySqlDbType.VarChar).Value = cliente.Nome;
+                cmd.Parameters.Add("@Nascimento", MySqlDbType.VarChar).Value = cliente.Nascimento.ToString("yyyy/MM/dd");
+                cmd.Parameters.Add("@Sexo", MySqlDbType.VarChar).Value = cliente.Sexo;
+                cmd.Parameters.Add("@CPF", MySqlDbType.VarChar).Value = cliente.CPF;
+                cmd.Parameters.Add("@Telefone", MySqlDbType.VarChar).Value = cliente.Telefone;
+                cmd.Parameters.Add("@Email", MySqlDbType.VarChar).Value = cliente.Email;
+                cmd.Parameters.Add("@Senha", MySqlDbType.VarChar).Value = cliente.Senha;
+                cmd.Parameters.Add("@Situacao", MySqlDbType.VarChar).Value = cliente.Situacao;
+
+                cmd.ExecuteNonQuery();
+                conexao.Close();
+
+            }
         }
 
         public void Cadastrar(Cliente cliente)
         {
-            throw new NotImplementedException();
+            string Situacao = SituacaoConstant.Ativo;
+            using (var conexao = new MySqlConnection(_conexaoMySQL))
+            {
+                conexao.Open();
+                MySqlCommand cmd = new MySqlCommand("insert into Cliente(Nome, Nascimento, Sexo, CPF, Telefone, Email, Senha, Situacao)" + " values(@Nome, @Nascimento, @Sexo, @CPF, @Telefone, @Email, @Senha, @Situacao)", conexao);
+
+                cmd.Parameters.Add("@Nome", MySqlDbType.VarChar).Value = cliente.Nome;
+                cmd.Parameters.Add("@Nascimento", MySqlDbType.DateTime).Value = cliente.Nascimento.ToString("yyyy/MM/dd");
+                cmd.Parameters.Add("@Sexo", MySqlDbType.VarChar).Value = cliente.Sexo;
+                cmd.Parameters.Add("@CPF", MySqlDbType.VarChar).Value = cliente.CPF;
+                cmd.Parameters.Add("@Telefone", MySqlDbType.VarChar).Value = cliente.Telefone;
+                cmd.Parameters.Add("@Email", MySqlDbType.VarChar).Value = cliente.Email;
+                cmd.Parameters.Add("@Senha", MySqlDbType.VarChar).Value = cliente.Senha;
+                cmd.Parameters.Add("@Situacao", MySqlDbType.VarChar).Value = Situacao;
+
+                cmd.ExecuteNonQuery();
+                conexao.Close();
+            }
         }
 
         public void Excluir(int Id)
         {
-            throw new NotImplementedException();
+            using(var conexao = new MySqlConnection(_conexaoMySQL))
+            {
+                conexao.Open();
+                MySqlCommand cmd = new MySqlCommand("delete from Cliente where Id=@Id", conexao);
+                cmd.Parameters.AddWithValue("@Id", Id);
+                cmd.ExecuteNonQuery();
+                conexao.Close();
+            }
         }
 
         

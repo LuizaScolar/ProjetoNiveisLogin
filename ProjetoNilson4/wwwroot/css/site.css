@@ -29,3 +29,27 @@ body {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
 }
+
+.back-legal{
+    background-color: skyblue;
+}
+.cor-legal{
+    color: skyblue;
+}
+.cor-legal2{
+    color: white;
+    margin: 6rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navegador{
+    width: 100%;
+    padding: 20px;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+

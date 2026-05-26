@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProjetoNilson4")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d922c1462f5abb150dc995cbbbb44b4f8adb18fa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2fbc14f84404ae66b6724971154cc3a038b356aa")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProjetoNilson4")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProjetoNilson4")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

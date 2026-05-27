@@ -6,9 +6,12 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+builder.Services.AddHttpContextAccessor();
+
 builder.Services.AddScoped<IClienteRepository, ClienteRepository>();
 builder.Services.AddScoped<IColaboradorRepository, ColaboradorRepository>();
 builder.Services.AddScoped<ProjetoNilson4.Libraries.Sessao.Sessao>();
+builder.Services.AddScoped<ProjetoNilson4.Libraries.Login.LoginCliente>();
 
 // Corrigir problema com TEMPDATA
 builder.Services.AddDistributedMemoryCache();

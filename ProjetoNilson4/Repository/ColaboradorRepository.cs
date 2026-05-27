@@ -127,19 +127,22 @@ namespace ProjetoNilson4.Repository
         // TERMINAR DEPOIS
         public List<Colaborador> ObterColaboradorPorEmail(string email)
         {
-            List<Colaborador> colabList = new List<Colaborador>();
-            using(var conexao = new MySqlConnection(_conexaoMySQL))
-            {
-                conexao.Open();
-                MySqlCommand cmd = new MySqlCommand("Select * from Colaborador where Email=@Email", conexao);
-                cmd.Parameters.AddWithValue("@Email", email);
+            throw new NotImplementedException();
+            /*
+              List<Colaborador> colabList = new List<Colaborador>();
+              using(var conexao = new MySqlConnection(_conexaoMySQL))
+              {
+                  conexao.Open();
+                  MySqlCommand cmd = new MySqlCommand("Select * from Colaborador where Email=@Email", conexao);
+                  cmd.Parameters.AddWithValue("@Email", email);
 
-                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                  MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+
                 
-                
-                
-            }
+              }
+            */
         }
+        
 
         
         public IEnumerable<Colaborador> ObterTodosColaboradores()
@@ -171,7 +174,7 @@ namespace ProjetoNilson4.Repository
             }
         }
 
-        public IPagedList<Colaborador> ObterTodosColaboradores(int? pagina)
+        public IPagedList<Colaborador> ObterTodosColaboradores(int? pagina, string pesquisa)
         {
             int RegistroPorPagina = _conf.GetValue<int>("RegistroPorPagina");
 
@@ -181,6 +184,11 @@ namespace ProjetoNilson4.Repository
             {
                 conexao.Open();
                 MySqlCommand cmd = new MySqlCommand("select * from colaborador;", conexao);
+
+                if(!string.IsNullOrEmpty(pesquisa))
+                {
+                    cmd = new MySqlCommand("select * from colaborador where Nome like'%" + pesquisa + "%'", conexao);
+                }
 
                 MySqlDataAdapter da = new MySqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
@@ -204,5 +212,7 @@ namespace ProjetoNilson4.Repository
                 return ListCat.ToPagedList<Colaborador>(NumeroPagina, RegistroPorPagina);
             }
         }
+
+        
     }
 }

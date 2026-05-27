@@ -21,6 +21,6 @@ namespace ProjetoNilson4.Repository.Contract
 
         IEnumerable<Colaborador> ObterTodosColaboradores();
 
-        IPagedList<Colaborador> ObterTodosColaboradores(int? pagina);
+        IPagedList<Colaborador> ObterTodosColaboradores(int? pagina, string pesquisa);
     }
 }

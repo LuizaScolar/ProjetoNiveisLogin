@@ -8,6 +8,21 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<IClienteRepository, ClienteRepository>();
 builder.Services.AddScoped<IColaboradorRepository, ColaboradorRepository>();
+builder.Services.AddScoped<ProjetoNilson4.Libraries.Sessao.Sessao>();
+
+// Corrigir problema com TEMPDATA
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession(options =>
+{
+    // Definir um tempo para duração. 
+    options.IdleTimeout = TimeSpan.FromSeconds(900);
+    options.Cookie.HttpOnly = true;
+    // Mostrar para o navegador que o cookie e essencial   
+    options.Cookie.IsEssential = true;
+});
+builder.Services.AddMvc().AddSessionStateTempDataProvider();
+
+
 
 var app = builder.Build();
 
@@ -22,6 +37,10 @@ app.UseAuthorization();
 
 app.MapStaticAssets();
 
+app.UseCookiePolicy();
+
+app.UseSession();
+
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}")
@@ -29,3 +48,4 @@ app.MapControllerRoute(
 
 
 app.Run();
+

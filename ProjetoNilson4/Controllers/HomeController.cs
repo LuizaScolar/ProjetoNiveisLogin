@@ -64,5 +64,30 @@ namespace ProjetoNilson4.Controllers
             //return new ContentResult() { Content = "Este é o Painel do Cliente!};
             return View();
         }
+
+        public IActionResult LogoutCliente()
+        {
+            _loginCliente.Logout();
+            return RedirectToAction(nameof(Index));
+        }
+
+        [HttpGet]
+        public IActionResult CadastroCli()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult CadastroCli(Cliente cliente)
+        {
+            if (ModelState.IsValid)
+            {
+                _clienteRepository.Cadastrar(cliente);
+                return RedirectToAction("Index", "Home");
+            }
+            else
+            {
+                return View(cliente);
+            }
+        }
     }
 }

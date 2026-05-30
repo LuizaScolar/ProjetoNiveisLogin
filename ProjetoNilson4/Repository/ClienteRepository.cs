@@ -80,7 +80,7 @@ namespace ProjetoNilson4.Repository
             using (var conexao = new MySqlConnection(_conexaoMySQL))
             {
                 conexao.Open();
-                MySqlCommand cmd = new MySqlCommand("insert into Cliente(Nome, Nascimento, Sexo, CPF, Telefone, Email, Senha, Situacao)" + " values(@Nome, @Nascimento, @Sexo, @CPF, @Telefone, @Email, @Senha, @Situacao)", conexao);
+                MySqlCommand cmd = new MySqlCommand("insert into Cliente(Nome, Nascimento, Sexo, CPF, Telefone, Email, Senha, ConfirmacaoSenha, Situacao)" + " values(@Nome, @Nascimento, @Sexo, @CPF, @Telefone, @Email, @Senha, @ConfirmacaoSenha, @Situacao)", conexao);
 
                 cmd.Parameters.Add("@Nome", MySqlDbType.VarChar).Value = cliente.Nome;
                 cmd.Parameters.Add("@Nascimento", MySqlDbType.DateTime).Value = cliente.Nascimento.ToString("yyyy/MM/dd");
@@ -89,7 +89,14 @@ namespace ProjetoNilson4.Repository
                 cmd.Parameters.Add("@Telefone", MySqlDbType.VarChar).Value = cliente.Telefone;
                 cmd.Parameters.Add("@Email", MySqlDbType.VarChar).Value = cliente.Email;
                 cmd.Parameters.Add("@Senha", MySqlDbType.VarChar).Value = cliente.Senha;
+                cmd.Parameters.Add("@ConfirmacaoSenha", MySqlDbType.VarChar).Value = cliente.ConfirmacaoSenha;
                 cmd.Parameters.Add("@Situacao", MySqlDbType.VarChar).Value = Situacao;
+
+                if (cliente.Senha != cliente.ConfirmacaoSenha)
+                {
+                    conexao.Close();
+                    throw new Exception("A senha e a confirmação não coincidem.");
+                }
 
                 cmd.ExecuteNonQuery();
                 conexao.Close();

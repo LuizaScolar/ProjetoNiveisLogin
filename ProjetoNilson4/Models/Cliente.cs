@@ -40,6 +40,12 @@ namespace ProjetoNilson4.Models
         [StringLength(10, MinimumLength = 6, ErrorMessage = "A senha deve ter entre 6 e 10 caracteres")]
         public string Senha { get; set; }
 
+        [Display(Name = "Confirmação da Senha")]
+        [DataType(DataType.Password)]
+        [Required(ErrorMessage = "Senha tem que ser confirmada")]
+        [StringLength(10, MinimumLength = 6, ErrorMessage = "A senha deve ter entre 6 e 10 caracteres")]
+        public string ConfirmacaoSenha { get; set; }
+
         [Display(Name = "Situação")]
         [Required(ErrorMessage = "A Situação é obrigatória")]
         public string Situacao { get; set; }

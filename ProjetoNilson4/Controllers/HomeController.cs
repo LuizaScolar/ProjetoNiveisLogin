@@ -9,11 +9,15 @@ namespace ProjetoNilson4.Controllers
     public class HomeController : Controller
     {
         private IClienteRepository _clienteRepository;
+        private IColaboradorRepository _colaboradorRepository;
+        private LoginColaborador _loginColaborador;
         private LoginCliente _loginCliente;
-        public HomeController(IClienteRepository clienteRepository, LoginCliente loginCliente)
+        public HomeController(IClienteRepository clienteRepository, IColaboradorRepository colaboradorRepository, LoginCliente loginCliente, LoginColaborador loginColaborador)
         {
             _clienteRepository = clienteRepository;
+            _colaboradorRepository = colaboradorRepository;
             _loginCliente = loginCliente;
+            _loginColaborador = loginColaborador;
         }
         public IActionResult Index()
         {
@@ -35,9 +39,13 @@ namespace ProjetoNilson4.Controllers
         {
             return View();
         }
+        public IActionResult LoginCliente()
+        {
+            return View();
+        }
         [HttpPost]
 
-        public IActionResult Login([FromForm] Cliente cliente)
+        public IActionResult LoginCliente([FromForm] Cliente cliente)
         {
             Cliente clienteDB = _clienteRepository.Login(cliente.Email, cliente.Senha);
 
@@ -56,6 +64,29 @@ namespace ProjetoNilson4.Controllers
 
         }
 
+        [HttpGet]
+        public IActionResult LoginColaborador()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult LoginColaborador([FromForm] Colaborador colaborador)
+        {
+            Colaborador colaboradorDB = _colaboradorRepository.Login(colaborador.Email, colaborador.Senha);
+
+            if(colaboradorDB.Email != null && colaboradorDB.Senha != null)
+            {
+                _loginColaborador.Login(colaboradorDB);
+                return new RedirectResult(Url.Action(nameof(PainelColaborador)));
+            }
+            else
+            {
+                ViewData["MSG_E"] = "Colaborador não localizado, por favor verifique e-mail e senha digitado";
+                return View();
+            }
+        }
+
         public IActionResult PainelCliente()
         {
             ViewBag.Nome = _loginCliente.GetCliente().Nome;
@@ -65,29 +96,25 @@ namespace ProjetoNilson4.Controllers
             return View();
         }
 
+        public IActionResult PainelColaborador()
+        {
+            ViewBag.Nome = _loginColaborador.GetColaborador().Nome;
+            ViewBag.Tipo = _loginColaborador.GetColaborador().Tipo;
+            ViewBag.Email = _loginColaborador.GetColaborador().Email;
+
+            return View();
+        }
+
         public IActionResult LogoutCliente()
         {
             _loginCliente.Logout();
             return RedirectToAction(nameof(Index));
         }
-
-        [HttpGet]
-        public IActionResult CadastroCli()
+        public IActionResult LogoutColaborador()
         {
-            return View();
+            _loginCliente.Logout();
+            return RedirectToAction(nameof(Index));
         }
-        [HttpPost]
-        public IActionResult CadastroCli(Cliente cliente)
-        {
-            if (ModelState.IsValid)
-            {
-                _clienteRepository.Cadastrar(cliente);
-                return RedirectToAction("Index", "Home");
-            }
-            else
-            {
-                return View(cliente);
-            }
-        }
+        
     }
 }

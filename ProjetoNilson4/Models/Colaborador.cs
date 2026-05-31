@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿
+using System.ComponentModel.DataAnnotations;
 
 namespace ProjetoNilson4.Models
 {
@@ -27,13 +28,11 @@ namespace ProjetoNilson4.Models
         [Display(Name = "Senha")]
         [DataType(DataType.Password)]
         [Required(ErrorMessage = "A senha é obrigatória")]
-        [StringLength(10, MinimumLength = 6, ErrorMessage = "A senha deve ter entre 6 e 10 caracteres")]
+        [StringLength(8, MinimumLength = 6, ErrorMessage = "A senha deve ter entre 6 e 8 caracteres")]
         public string Senha { get; set; }
 
-        // Tipo
 
         [Display(Name = "Tipo")]
-        [Required(ErrorMessage = "O Tipo é obrigatorio")]
-        public string Tipo { get; set; }
+        public string Tipo { get; set; } = "";
     }
 }

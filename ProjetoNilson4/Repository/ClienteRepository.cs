@@ -92,12 +92,6 @@ namespace ProjetoNilson4.Repository
                 cmd.Parameters.Add("@ConfirmacaoSenha", MySqlDbType.VarChar).Value = cliente.ConfirmacaoSenha;
                 cmd.Parameters.Add("@Situacao", MySqlDbType.VarChar).Value = Situacao;
 
-                if (cliente.Senha != cliente.ConfirmacaoSenha)
-                {
-                    conexao.Close();
-                    throw new Exception("A senha e a confirmação não coincidem.");
-                }
-
                 cmd.ExecuteNonQuery();
                 conexao.Close();
             }

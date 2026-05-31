@@ -1,4 +1,5 @@
 ﻿@inject ProjetoNilson4.Libraries.Login.LoginCliente _LoginCliente
+@inject ProjetoNilson4.Libraries.Login.LoginColaborador _LoginColaborador
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,9 +39,19 @@
                             <li><a class="dropdown-item" href="/Home/LogoutCliente">Sair</a></li>
                         </ul>
                     }
+                    else if(_LoginColaborador.GetColaborador() != null)
+                    {
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">@_LoginColaborador.GetColaborador().Nome</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Minhas Compras</a></li>
+                            <li><a class="dropdown-item" href="#">Meu perfil</a></li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li><a class="dropdown-item" href="/Home/LogoutColaborador">Sair</a></li>
+                        </ul>
+                    }
                     else
                     {
-                        <a class="nav-link" href="/Home/Login"><i class="fas fa-user-alt"></i>Login</a>
+                        <a class="nav-link" asp-action="Login" asp-controller="Home"><i class="fas fa-user-alt"></i>Login</a>
                     }
                 </li>
         </nav>

@@ -47,7 +47,6 @@ namespace ProjetoNilson4.Models
         public string ConfirmacaoSenha { get; set; }
 
         [Display(Name = "Situação")]
-        [Required(ErrorMessage = "A Situação é obrigatória")]
-        public string Situacao { get; set; }
+        public string Situacao { get; set; } = "";
     }
 }

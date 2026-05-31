@@ -12,6 +12,7 @@ builder.Services.AddScoped<IClienteRepository, ClienteRepository>();
 builder.Services.AddScoped<IColaboradorRepository, ColaboradorRepository>();
 builder.Services.AddScoped<ProjetoNilson4.Libraries.Sessao.Sessao>();
 builder.Services.AddScoped<ProjetoNilson4.Libraries.Login.LoginCliente>();
+builder.Services.AddScoped<ProjetoNilson4.Libraries.Login.LoginColaborador>();
 
 // Corrigir problema com TEMPDATA
 builder.Services.AddDistributedMemoryCache();

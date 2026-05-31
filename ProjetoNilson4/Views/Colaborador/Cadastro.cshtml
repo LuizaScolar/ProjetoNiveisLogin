@@ -1,34 +1,22 @@
-@model ProjetoNilson4.Models.Cliente
+@model ProjetoNilson4.Models.Colaborador
 
 @{
-    ViewData["Title"] = "Cadastro do Cliente";
+    ViewData["Title"] = "Cadastro do Colaborador";
 }
 
 <h1>Create</h1>
 
-<h4>Cliente</h4>
+<h4>Colaborador</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="CadastroCli">
+        <form asp-action="Cadastro">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
             <div class="form-group">
                 <label asp-for="Nome" class="control-label"></label>
                 <input asp-for="Nome" class="form-control" />
                 <span asp-validation-for="Nome" class="text-danger"></span>
-            </div>
-
-            <div class="form-group">
-                <label asp-for="Nascimento" class="control-label"></label>
-                <input asp-for="Nascimento" class="form-control" />
-                <span asp-validation-for="Nascimento" class="text-danger"></span>
-            </div>
-
-            <div class="form-group">
-                <label asp-for="Sexo" class="control-label"></label>
-                <input asp-for="Sexo" class="form-control" />
-                <span asp-validation-for="Sexo" class="text-danger"></span>
             </div>
 
             <div class="form-group">
@@ -55,16 +43,6 @@
                 <span asp-validation-for="Senha" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ConfirmacaoSenha" class="control-label"></label>
-                <input asp-for="ConfirmacaoSenha" class="form-control" />
-                <span asp-validation-for="ConfirmacaoSenha" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Situacao" class="control-label"></label>
-                <input asp-for="Situacao" class="form-control" />
-                <span asp-validation-for="Situacao" class="text-danger"></span>
-            </div>
-            <div class="form-group">
                 <input type="submit" value="Cadastrar" class="btn btn-primary" />
             </div>
         </form>
@@ -72,5 +50,5 @@
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index" asp-controller="Home">Vá ao menu</a>
 </div>

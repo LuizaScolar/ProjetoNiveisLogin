@@ -20,13 +20,17 @@ namespace ProjetoNilson4.Libraries.Login
             _sessao.Cadastrar(Key, clienteJSONString);
         }
 
-        public Cliente GetCliente()
+        public Cliente? GetCliente()
         {
             //deserializar
             if(_sessao.Existe(Key))
             {
-                string clienteJSONString = _sessao.Consultar(Key);
-                return JsonConvert.DeserializeObject<Cliente>(clienteJSONString);
+                string? clienteJSONString = _sessao.Consultar(Key);
+                if (string.IsNullOrWhiteSpace(clienteJSONString))
+                {
+                    return null;
+                }
+                return JsonConvert.DeserializeObject<Cliente>(clienteJSONString!);
             }
             else
             {

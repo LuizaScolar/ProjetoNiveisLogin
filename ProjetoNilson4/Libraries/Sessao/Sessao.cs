@@ -1,27 +1,31 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System;
+using Microsoft.AspNetCore.Http;
 
 namespace ProjetoNilson4.Libraries.Sessao
 {
     public class Sessao
     {
-        IHttpContextAccessor _context;
+        private readonly IHttpContextAccessor _context;
         public Sessao(IHttpContextAccessor context)
         {
-            _context = context;
+            _context = context ?? throw new ArgumentNullException(nameof(context));
         }
+
+        private ISession Session => _context?.HttpContext?.Session ?? throw new InvalidOperationException("HTTP context or session is not available.");
 
         public void Cadastrar(string Key, string Valor)
         {
-            _context.HttpContext.Session.SetString(Key, Valor);
+            Session.SetString(Key, Valor);
         }
 
-        public string Consultar(string Key)
+        public string? Consultar(string Key)
         {
-            return _context.HttpContext.Session.GetString(Key);
+            return Session.GetString(Key);
         }
         public bool Existe(string Key)
         {
-            if (_context.HttpContext.Session.GetString(Key) == null)
+            if (Session.GetString(Key) == null)
             {
                 return false;
             }
@@ -29,19 +33,19 @@ namespace ProjetoNilson4.Libraries.Sessao
         }
         public void Remover(string Key)
         {
-            _context.HttpContext.Session.Remove(Key);
+            Session.Remove(Key);
         }
         public void RemoverTodos()
         {
-            _context.HttpContext.Session.Clear();
+            Session.Clear();
         }
         public void Atualizar(string Key, string Valor)
         {
             if (Existe(Key))
             {
-                _context.HttpContext.Session.Remove(Key);
+                Session.Remove(Key);
             }
-            _context.HttpContext.Session.SetString(Key, Valor);
+            Session.SetString(Key, Valor);
         }
     }
 }

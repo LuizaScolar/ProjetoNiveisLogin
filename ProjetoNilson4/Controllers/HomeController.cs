@@ -52,7 +52,7 @@ namespace ProjetoNilson4.Controllers
             if(clienteDB.Email != null && clienteDB.Senha != null)
             {
                 _loginCliente.Login(clienteDB);
-                return new RedirectResult(Url.Action(nameof(PainelCliente)));
+                    return RedirectToAction(nameof(PainelCliente));
             }
             else
             {
@@ -78,7 +78,7 @@ namespace ProjetoNilson4.Controllers
             if(colaboradorDB.Email != null && colaboradorDB.Senha != null)
             {
                 _loginColaborador.Login(colaboradorDB);
-                return new RedirectResult(Url.Action(nameof(PainelColaborador)));
+                return RedirectToAction(nameof(PainelColaborador));
             }
             else
             {

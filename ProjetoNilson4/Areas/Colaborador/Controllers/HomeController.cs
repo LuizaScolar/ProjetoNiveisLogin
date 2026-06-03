@@ -79,5 +79,16 @@ namespace ProjetoNilson4.Areas.Colaborador.Controllers
             return View();
 
         }
+
+        public IActionResult Painel()
+        {
+            return View();
+        }
+
+        public IActionResult Logout()
+        {
+            _loginColaborador.Logout();
+            return RedirectToAction("Login", "Home");
+        }
     }
 }

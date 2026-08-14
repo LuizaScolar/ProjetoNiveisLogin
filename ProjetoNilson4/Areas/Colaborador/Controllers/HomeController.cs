@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using ProjetoNilson4.Libraries.Filtro;
 using ProjetoNilson4.Libraries.Login;
 using ProjetoNilson4.Models;
 using ProjetoNilson4.Models.Constant;
@@ -9,56 +10,43 @@ namespace ProjetoNilson4.Areas.Colaborador.Controllers
     [Area("Colaborador")]
     public class HomeController : Controller
     {
-        private IColaboradorRepository _repositoryColaborador;
+        private IColaboradorRepository _colaboradorRepository;
         private LoginColaborador _loginColaborador;
 
         public HomeController(IColaboradorRepository repositoryColaborador, LoginColaborador loginColaborador)
         {
-            _repositoryColaborador = repositoryColaborador;
+            _colaboradorRepository = repositoryColaborador;
             _loginColaborador = loginColaborador;
         }
 
+        [ColaboradorAutorizacao]
         public IActionResult Index()
         {
             return View();
         }
 
-        public IActionResult Login()
-        {
-            return View();
-        }
+		public IActionResult LoginColaborador()
+		{
+			return View();
+		}
 
-        [HttpPost]
+
+		[HttpPost]
         public IActionResult Login([FromForm] Models.Colaborador colaborador)
         {
-            var colaboradorDB = _repositoryColaborador.Login(colaborador.Email, colaborador.Senha);
+            Models.Colaborador colaboradorDB = _colaboradorRepository.Login(colaborador.Email, colaborador.Senha);
 
-            if (colaboradorDB != null && !string.IsNullOrEmpty(colaboradorDB.Email) && !string.IsNullOrEmpty(colaboradorDB.Senha))
-            {
                 if (colaboradorDB.Tipo == ColaboradorTipoConstant.Gerente)
                 {
                     _loginColaborador.Login(colaboradorDB);
-                    var redirectUrl = Url.Action(nameof(PainelGerente));
-                    if (!string.IsNullOrEmpty(redirectUrl))
-                    {
-                        return new RedirectResult(redirectUrl);
-                    }
-                    return RedirectToAction(nameof(Index));
-                }
-                else if (colaboradorDB.Tipo == ColaboradorTipoConstant.Comum)
-                {
-                    _loginColaborador.Login(colaboradorDB);
-                    var redirectUrl = Url.Action(nameof(PainelComum));
-                    if (!string.IsNullOrEmpty(redirectUrl))
-                    {
-                        return new RedirectResult(redirectUrl);
-                    }
-                    return RedirectToAction(nameof(Index));
-                }
-            }
+                    return new RedirectResult(Url.Action(nameof(Painel)));
 
-            ViewData["MSG_E"] = "Usuário não encontrado, verifique email e senha digitado";
-            return View();
+                }
+               else
+                {
+                     ViewData["MSG_E"] = "Usuário não encontrado, verifique email e senha digitado";
+                     return View();
+                }
         }
 
 
@@ -80,11 +68,13 @@ namespace ProjetoNilson4.Areas.Colaborador.Controllers
 
         }
 
+        [ColaboradorAutorizacao]
         public IActionResult Painel()
         {
             return View();
         }
 
+        [ColaboradorAutorizacao]
         public IActionResult Logout()
         {
             _loginColaborador.Logout();

@@ -1,5 +1,6 @@
 using ProjetoNilson4.Repository.Contract;
 using ProjetoNilson4.Repository;
+using ProjetoNilson4.Libraries.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -44,6 +45,8 @@ app.MapStaticAssets();
 app.UseCookiePolicy();
 
 app.UseSession();
+
+app.UseMiddleware<ValidateAntiForgeryTokenMiddleware>();
 
 app.MapControllerRoute(
     name: "areas",

@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
+using ProjetoNilson4.Controllers;
 
 namespace ProjetoNilson4.Repository.Contract
 {
@@ -19,5 +20,7 @@ namespace ProjetoNilson4.Repository.Contract
         Cliente ObterCliente(int Id);
         IEnumerable<Cliente> ObterTodosClientes();
         IPagedList<Cliente> ObterTodosClientes(int? pagina, string pesquisa);
+        void Cadastrar(ClienteController cliente);
+        void Cadastrar(Areas.Colaborador.Controllers.ClienteController cliente);
     }
 }

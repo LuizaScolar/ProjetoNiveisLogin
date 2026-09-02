@@ -65,28 +65,7 @@ namespace ProjetoNilson4.Controllers
 
         }
 
-        [HttpGet]
-        public IActionResult LoginColaborador()
-        {
-            return View();
-        }
-
-        [HttpPost]
-        public IActionResult LoginColaborador([FromForm] Colaborador colaborador)
-        {
-            Colaborador colaboradorDB = _colaboradorRepository.Login(colaborador.Email, colaborador.Senha);
-
-            if(colaboradorDB.Email != null && colaboradorDB.Senha != null)
-            {
-                _loginColaborador.Login(colaboradorDB);
-                return RedirectToAction(nameof(PainelColaborador));
-            }
-            else
-            {
-                ViewData["MSG_E"] = "Colaborador não localizado, por favor verifique e-mail e senha digitado";
-                return View();
-            }
-        }
+        
 
         [ClienteAutorizacao]
 

@@ -35,12 +35,16 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29sYWJvcmFkb3JcVmlld3NcQ2xpZW50ZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/3mtec/Downloads/ProjetoNiveisLogin/ProjetoNilson4/Areas/Colaborador/Views/Colaborador/Cadastro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29sYWJvcmFkb3JcVmlld3NcQ29sYWJvcmFkb3JcQ2FkYXN0cm8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/3mtec/Downloads/ProjetoNiveisLogin/ProjetoNilson4/Areas/Colaborador/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29sYWJvcmFkb3JcVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/3mtec/Downloads/ProjetoNiveisLogin/ProjetoNilson4/Areas/Colaborador/Views/Home/Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29sYWJvcmFkb3JcVmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
+[C:/Users/3mtec/Downloads/ProjetoNiveisLogin/ProjetoNilson4/Areas/Colaborador/Views/Home/LoginColaborador.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29sYWJvcmFkb3JcVmlld3NcSG9tZVxMb2dpbkNvbGFib3JhZG9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/3mtec/Downloads/ProjetoNiveisLogin/ProjetoNilson4/Areas/Colaborador/Views/Home/Painel.cshtml]
@@ -101,10 +105,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/3mtec/Downloads/ProjetoNiveisLogin/ProjetoNilson4/Views/Home/LoginCliente.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbkNsaWVudGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/3mtec/Downloads/ProjetoNiveisLogin/ProjetoNilson4/Views/Home/LoginColaborador.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbkNvbGFib3JhZG9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/3mtec/Downloads/ProjetoNiveisLogin/ProjetoNilson4/Views/Home/PainelCliente.cshtml]

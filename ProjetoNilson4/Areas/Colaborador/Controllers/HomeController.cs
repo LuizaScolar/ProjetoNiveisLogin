@@ -58,5 +58,7 @@ namespace ProjetoNilson4.Areas.Colaborador.Controllers
             _loginColaborador.Logout();
             return RedirectToAction("Login", "Home");
         }
+
+
     }
 }

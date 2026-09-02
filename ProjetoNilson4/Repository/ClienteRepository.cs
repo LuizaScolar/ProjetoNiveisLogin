@@ -183,6 +183,14 @@ namespace ProjetoNilson4.Repository
             throw new NotImplementedException();
         }
 
+        public void Cadastrar(Controllers.ClienteController cliente)
+        {
+            throw new NotImplementedException();
+        }
 
+        public void Cadastrar(Areas.Colaborador.Controllers.ClienteController cliente)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

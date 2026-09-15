@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YtlG7MZY4Cw=",
+  "dgSpecHash": "TzNjKIDDOjI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\3mtec\\Downloads\\ProjetoNiveisLogin\\ProjetoNilson4\\ProjetoNilson4.csproj",
+  "projectFilePath": "C:\\Users\\3mtec\\Desktop\\ProjetoNiveisLogin\\ProjetoNilson4\\ProjetoNilson4.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\3mtec\\.nuget\\packages\\bouncycastle.cryptography\\2.6.2\\bouncycastle.cryptography.2.6.2.nupkg.sha512",
     "C:\\Users\\3mtec\\.nuget\\packages\\google.protobuf\\3.35.0\\google.protobuf.3.35.0.nupkg.sha512",
@@ -124,10 +124,10 @@
     {
       "code": "NU1901",
       "level": "Warning",
-      "message": "O pacote 'NuGet.Packaging' 6.12.1 tem uma baixa vulnerabilidade de gravidade conhecida, https://github.com/advisories/GHSA-g4vj-cjjj-v7hg",
-      "projectPath": "C:\\Users\\3mtec\\Downloads\\ProjetoNiveisLogin\\ProjetoNilson4\\ProjetoNilson4.csproj",
+      "message": "Package 'NuGet.Packaging' 6.12.1 has a known low severity vulnerability, https://github.com/advisories/GHSA-g4vj-cjjj-v7hg",
+      "projectPath": "C:\\Users\\3mtec\\Desktop\\ProjetoNiveisLogin\\ProjetoNilson4\\ProjetoNilson4.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\3mtec\\Downloads\\ProjetoNiveisLogin\\ProjetoNilson4\\ProjetoNilson4.csproj",
+      "filePath": "C:\\Users\\3mtec\\Desktop\\ProjetoNiveisLogin\\ProjetoNilson4\\ProjetoNilson4.csproj",
       "libraryId": "NuGet.Packaging",
       "targetGraphs": [
         "net10.0"
@@ -136,10 +136,10 @@
     {
       "code": "NU1901",
       "level": "Warning",
-      "message": "O pacote 'NuGet.Protocol' 6.12.1 tem uma baixa vulnerabilidade de gravidade conhecida, https://github.com/advisories/GHSA-g4vj-cjjj-v7hg",
-      "projectPath": "C:\\Users\\3mtec\\Downloads\\ProjetoNiveisLogin\\ProjetoNilson4\\ProjetoNilson4.csproj",
+      "message": "Package 'NuGet.Protocol' 6.12.1 has a known low severity vulnerability, https://github.com/advisories/GHSA-g4vj-cjjj-v7hg",
+      "projectPath": "C:\\Users\\3mtec\\Desktop\\ProjetoNiveisLogin\\ProjetoNilson4\\ProjetoNilson4.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\3mtec\\Downloads\\ProjetoNiveisLogin\\ProjetoNilson4\\ProjetoNilson4.csproj",
+      "filePath": "C:\\Users\\3mtec\\Desktop\\ProjetoNiveisLogin\\ProjetoNilson4\\ProjetoNilson4.csproj",
       "libraryId": "NuGet.Protocol",
       "targetGraphs": [
         "net10.0"

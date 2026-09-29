@@ -3285,7 +3285,6 @@ C:\Users\3mtec\Desktop\ProjetoNiveisLogin\ProjetoNilson4\obj\Debug\net10.0\compr
 C:\Users\3mtec\Desktop\ProjetoNiveisLogin\ProjetoNilson4\obj\Debug\net10.0\compressed\2xyqis486v-{0}-t2lubkuzwy-t2lubkuzwy.gz
 C:\Users\3mtec\Desktop\ProjetoNiveisLogin\ProjetoNilson4\obj\Debug\net10.0\compressed\lodh1w1lre-{0}-zpoxynweow-zpoxynweow.gz
 C:\Users\3mtec\Desktop\ProjetoNiveisLogin\ProjetoNilson4\obj\Debug\net10.0\compressed\i8bd3lmpdh-{0}-pod3mu6m4c-pod3mu6m4c.gz
-C:\Users\3mtec\Desktop\ProjetoNiveisLogin\ProjetoNilson4\obj\Debug\net10.0\compressed\x0q1mjsat5-{0}-ytk2j5b8je-ytk2j5b8je.gz
 C:\Users\3mtec\Desktop\ProjetoNiveisLogin\ProjetoNilson4\obj\Debug\net10.0\compressed\18faozbfvl-{0}-dfxogu5ojs-dfxogu5ojs.gz
 C:\Users\3mtec\Desktop\ProjetoNiveisLogin\ProjetoNilson4\obj\Debug\net10.0\compressed\zsr7ntpo7z-{0}-dfxogu5ojs-dfxogu5ojs.gz
 C:\Users\3mtec\Desktop\ProjetoNiveisLogin\ProjetoNilson4\obj\Debug\net10.0\staticwebassets.build.json
@@ -3300,3 +3299,4 @@ C:\Users\3mtec\Desktop\ProjetoNiveisLogin\ProjetoNilson4\obj\Debug\net10.0\refin
 C:\Users\3mtec\Desktop\ProjetoNiveisLogin\ProjetoNilson4\obj\Debug\net10.0\ProjetoNilson4.pdb
 C:\Users\3mtec\Desktop\ProjetoNiveisLogin\ProjetoNilson4\obj\Debug\net10.0\ProjetoNilson4.genruntimeconfig.cache
 C:\Users\3mtec\Desktop\ProjetoNiveisLogin\ProjetoNilson4\obj\Debug\net10.0\ref\ProjetoNilson4.dll
+C:\Users\3mtec\Desktop\ProjetoNiveisLogin\ProjetoNilson4\obj\Debug\net10.0\compressed\x0q1mjsat5-{0}-uxcnodq3s9-uxcnodq3s9.gz

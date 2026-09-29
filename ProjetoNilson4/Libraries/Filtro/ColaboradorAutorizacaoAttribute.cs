@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using ProjetoNilson4.Libraries.Login;
+using ProjetoNilson4.Models;
 using ProjetoNilson4.Models.Constant;
 
 namespace ProjetoNilson4.Libraries.Filtro
@@ -8,21 +9,19 @@ namespace ProjetoNilson4.Libraries.Filtro
     public class ColaboradorAutorizacaoAttribute : Attribute, IAuthorizationFilter
     {
         private string _tipoColaboradorAutorizado;
-        public ColaboradorAutorizacaoAttribute(string TipoColaboradorAutorizado = ColaboradorTipoConstant.Comum)
+        public ColaboradorAutorizacaoAttribute(string tipoColaboradorAutorizado = ColaboradorTipoConstant.Comum)
         {
-            _tipoColaboradorAutorizado = TipoColaboradorAutorizado;
+            _tipoColaboradorAutorizado = tipoColaboradorAutorizado;
         }
 
         LoginColaborador _loginColaborador;
-
         public void OnAuthorization(AuthorizationFilterContext context)
         {
             _loginColaborador = (LoginColaborador)context.HttpContext.RequestServices.GetService(typeof(LoginColaborador));
-            Models.Colaborador colaborador = _loginColaborador.GetColaborador();
-
+            Colaborador colaborador = _loginColaborador.GetColaborador();
             if (colaborador == null)
             {
-                context.Result = new RedirectToActionResult("Login", "Home", null);
+                context.Result = new RedirectToActionResult("LoginColaborador", "Home", null);
             }
             else
             {

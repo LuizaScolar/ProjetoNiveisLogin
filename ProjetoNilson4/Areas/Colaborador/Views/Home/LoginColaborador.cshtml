@@ -1,4 +1,4 @@
-﻿@model ProjetoNilson4.Models.Cliente
+﻿@model ProjetoNilson4.Models.Colaborador
 @{
     ViewData["Title"] = "Login do Colaborador";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -7,7 +7,7 @@
     <br/>
     <br/>
     <section class="container">
-        <aside class="col-sn-4">
+        <aside class="col-sn-6">
             <h3 class="subtitle-doc">
                 Login do Colaborador
             </h3>
@@ -18,7 +18,7 @@
                         {
                             <p class="alert alert-danger">@Html.Raw(ViewData["MSG_E"])</p>
                         }
-                        <a asp-area="Colaborador" asp-action="Cadastro" asp-controller="Colaborador"  class="float-right btn btn-outline-primary">Cadastre-se</a>
+                        <a asp-action="Cadastro" asp-area="Colaborador" asp-controller="Colaborador" class="float-right btn btn-outline-primary">Cadastre-se</a>
                         <h4 class="card-title mb-4 mt-1">Entrar</h4>
                         <form method="post">
                             <div class="form-group">

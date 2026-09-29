@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using ProjetoNilson4.Models.Constant;
+using ProjetoNilson4.Libraries.Filtro;
 using ProjetoNilson4.Repository.Contract;
 
 namespace ProjetoNilson4.Areas.Colaborador.Controllers
@@ -8,32 +8,28 @@ namespace ProjetoNilson4.Areas.Colaborador.Controllers
     public class ClienteController : Controller
     {
         private IClienteRepository _clienteRepository;
-
-        public string Situacao { get; private set; }
-
         public ClienteController(IClienteRepository clienteRepository)
         {
             _clienteRepository = clienteRepository;
         }
+
 
         public IActionResult Index()
         {
             return View(_clienteRepository.ObterTodosClientes());
         }
 
-        public IActionResult Cadastrar()
+        [ValidateHttpReferer]
+        public IActionResult Ativar(int id)
         {
-            return View();
+            _clienteRepository.Ativar(id);
+            return RedirectToAction(nameof(Index));
         }
-
-        [HttpPost]
-        public IActionResult Cadastrar([FromForm] ClienteController cliente)
+        [ValidateHttpReferer]
+        public IActionResult Desativar(int id)
         {
-            cliente.Situacao = SituacaoConstant.Ativo;
-
-            _clienteRepository.Cadastrar(cliente);
-            return RedirectToAction(nameof(Cadastrar));
+            _clienteRepository.Desativar(id);
+            return RedirectToAction(nameof(Index));
         }
-
     }
 }

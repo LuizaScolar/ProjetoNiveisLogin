@@ -183,14 +183,32 @@ namespace ProjetoNilson4.Repository
             throw new NotImplementedException();
         }
 
-        public void Cadastrar(Controllers.ClienteController cliente)
+        public void Ativar(int Id)
         {
-            throw new NotImplementedException();
+            string Situacao = SituacaoConstant.Ativo;
+            using(var conexao = new MySqlConnection(_conexaoMySQL))
+            {
+                conexao.Open();
+                MySqlCommand cmd = new MySqlCommand("update Cliente set Situacao=@Situacao where Id = @Id", conexao);
+                cmd.Parameters.Add("@Id", MySqlDbType.VarChar).Value = Id;
+                cmd.Parameters.Add("@Situacao", MySqlDbType.VarChar).Value = Situacao;
+                cmd.ExecuteNonQuery();
+                conexao.Close();
+            }
         }
-
-        public void Cadastrar(Areas.Colaborador.Controllers.ClienteController cliente)
+        public void Desativar(int Id)
         {
-            throw new NotImplementedException();
+            string Situacao = SituacaoConstant.Desativado;
+            using(var conexao = new MySqlConnection(_conexaoMySQL))
+            {
+                conexao.Open();
+                MySqlCommand cmd = new MySqlCommand("update Cliente set Situacao=@Situacao where Id = @Id", conexao);
+
+                cmd.Parameters.Add("@Id", MySqlDbType.VarChar).Value = Id;
+                cmd.Parameters.Add("@Situacao", MySqlDbType.VarChar).Value = Situacao;
+                cmd.ExecuteNonQuery();
+                conexao.Close();
+            }
         }
     }
 }

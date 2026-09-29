@@ -53,7 +53,7 @@ namespace ProjetoNilson4.Controllers
             if(clienteDB.Email != null && clienteDB.Senha != null)
             {
                 _loginCliente.Login(clienteDB);
-                    return RedirectToAction(nameof(PainelCliente));
+                return new RedirectResult(Url.Action(nameof(PainelCliente)));
             }
             else
             {
@@ -65,10 +65,8 @@ namespace ProjetoNilson4.Controllers
 
         }
 
-        
 
         [ClienteAutorizacao]
-
         public IActionResult PainelCliente()
         {
             ViewBag.Nome = _loginCliente.GetCliente().Nome;
@@ -87,18 +85,13 @@ namespace ProjetoNilson4.Controllers
             return View();
         }
 
-		[ClienteAutorizacao]
-
-		public IActionResult LogoutCliente()
+        [ClienteAutorizacao]
+        public IActionResult LogoutCliente()
         {
             _loginCliente.Logout();
             return RedirectToAction(nameof(Index));
         }
-        public IActionResult LogoutColaborador()
-        {
-            _loginCliente.Logout();
-            return RedirectToAction(nameof(Index));
-        }
+        
         
     }
 }

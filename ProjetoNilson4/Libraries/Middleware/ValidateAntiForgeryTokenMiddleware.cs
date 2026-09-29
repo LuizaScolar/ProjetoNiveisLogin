@@ -1,6 +1,4 @@
 ﻿using Microsoft.AspNetCore.Antiforgery;
-using Microsoft.EntityFrameworkCore;
-
 namespace ProjetoNilson4.Libraries.Middleware
 {
     public class ValidateAntiForgeryTokenMiddleware

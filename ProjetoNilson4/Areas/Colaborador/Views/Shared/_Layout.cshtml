@@ -48,7 +48,7 @@
         
         <ul class="navbar-nav px-3">
             <li class="nav-item text-nowrap">
-                <a class="nav-link" asp-area="Colaborador" asp-action="Logout" asp-controller="Home"><span>@_colaborador.GetColaborador().Nome </span> Sair</a>
+                <a class="nav-link" asp-area="Colaborador" asp-action="LogoutColaborador" asp-controller="Home"><span>@_colaborador.GetColaborador().Nome </span> Sair</a>
             </li>
             
         </ul>
@@ -78,7 +78,7 @@
                                 Produtos
                             </a>
                         </li>
-
+                         
                         @if (_colaborador.GetColaborador() != null && _colaborador.GetColaborador().Tipo == ColaboradorTipoConstant.Gerente)
                         {
                             <li class="nav-item">
@@ -88,6 +88,8 @@
                                 </a>
                             </li>
                         }
+                        
+                        
                         
                         <li class="nav-item">
                             <a class="nav-link" asp-controller="Cliente" asp-action="Index">
@@ -99,7 +101,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">
                                 <span data-feather="file"></span>
-                                Pedidos
                             </a>
                         </li>
 

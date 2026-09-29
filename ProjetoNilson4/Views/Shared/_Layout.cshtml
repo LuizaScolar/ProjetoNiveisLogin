@@ -14,6 +14,7 @@
 <body>
     <header>
         <nav class="navegador back-legal">
+                <img src="~/img/Projeto-Login.webp" class="img-logo" />
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -38,19 +39,9 @@
                             <li><a class="dropdown-item" href="/Home/LogoutCliente">Sair</a></li>
                         </ul>
                     }
-                    else if(_LoginColaborador.GetColaborador() != null)
-                    {
-                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">@_LoginColaborador.GetColaborador().Nome</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Minhas Compras</a></li>
-                            <li><a class="dropdown-item" href="#">Meu perfil</a></li>
-                            <li><hr class="dropdown-divider" /></li>
-                            <li><a class="dropdown-item" href="/Home/LogoutColaborador">Sair</a></li>
-                        </ul>
-                    }
                     else
                     {
-                        <a class="nav-link" asp-action="Login" asp-controller="Home"><i class="fas fa-user-alt"></i>Login</a>
+                        <a class="nav-link" asp-action="Login" asp-area="" asp-controller="Home"><i class="fas fa-user-alt"></i>Login</a>
                     }
                 </li>
         </nav>
@@ -63,7 +54,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2026 - COPYRIGHT - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2026 - ProjetoNilson4 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

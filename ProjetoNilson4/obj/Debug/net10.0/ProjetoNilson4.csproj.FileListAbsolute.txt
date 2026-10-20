@@ -3548,7 +3548,6 @@ C:\Users\scola\OneDrive\Área de Trabalho\ProjetoNiveisLogin\ProjetoNilson4\obj\
 C:\Users\scola\OneDrive\Área de Trabalho\ProjetoNiveisLogin\ProjetoNilson4\obj\Debug\net10.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\scola\OneDrive\Área de Trabalho\ProjetoNiveisLogin\ProjetoNilson4\obj\Debug\net10.0\scopedcss\bundle\ProjetoNilson4.styles.css
 C:\Users\scola\OneDrive\Área de Trabalho\ProjetoNiveisLogin\ProjetoNilson4\obj\Debug\net10.0\scopedcss\projectbundle\ProjetoNilson4.bundle.scp.css
-C:\Users\scola\OneDrive\Área de Trabalho\ProjetoNiveisLogin\ProjetoNilson4\obj\Debug\net10.0\compressed\x0q1mjsat5-{0}-i5ca65dwty-i5ca65dwty.gz
 C:\Users\scola\OneDrive\Área de Trabalho\ProjetoNiveisLogin\ProjetoNilson4\obj\Debug\net10.0\compressed\9zym5w42od-{0}-61n19gt1b8-61n19gt1b8.gz
 C:\Users\scola\OneDrive\Área de Trabalho\ProjetoNiveisLogin\ProjetoNilson4\obj\Debug\net10.0\compressed\bgm3pdq31f-{0}-dxmzy6lvhu-dxmzy6lvhu.gz
 C:\Users\scola\OneDrive\Área de Trabalho\ProjetoNiveisLogin\ProjetoNilson4\obj\Debug\net10.0\compressed\djqx1sqy7x-{0}-t1cqhe9u97-t1cqhe9u97.gz
@@ -3718,3 +3717,4 @@ C:\Users\scola\OneDrive\Área de Trabalho\ProjetoNiveisLogin\ProjetoNilson4\obj\
 C:\Users\scola\OneDrive\Área de Trabalho\ProjetoNiveisLogin\ProjetoNilson4\obj\Debug\net10.0\ProjetoNilson4.pdb
 C:\Users\scola\OneDrive\Área de Trabalho\ProjetoNiveisLogin\ProjetoNilson4\obj\Debug\net10.0\ProjetoNilson4.genruntimeconfig.cache
 C:\Users\scola\OneDrive\Área de Trabalho\ProjetoNiveisLogin\ProjetoNilson4\obj\Debug\net10.0\ref\ProjetoNilson4.dll
+C:\Users\scola\OneDrive\Área de Trabalho\ProjetoNiveisLogin\ProjetoNilson4\obj\Debug\net10.0\compressed\x0q1mjsat5-{0}-vv6d9jnm80-vv6d9jnm80.gz

@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\scola\\OneDrive\\\u00C1rea de Trabalho\\ProjetoNiveisLogin\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{04DC0D58-899F-C9E4-54B5-6C8CC0285105}|ProjetoNilson4\\ProjetoNilson4.csproj|c:\\users\\scola\\onedrive\\\u00E1rea de trabalho\\projetoniveislogin\\projetonilson4\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04DC0D58-899F-C9E4-54B5-6C8CC0285105}|ProjetoNilson4\\ProjetoNilson4.csproj|solutionrelative:projetonilson4\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{04DC0D58-899F-C9E4-54B5-6C8CC0285105}|ProjetoNilson4\\ProjetoNilson4.csproj|c:\\users\\scola\\onedrive\\\u00E1rea de trabalho\\projetoniveislogin\\projetonilson4\\areas\\colaborador\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04DC0D58-899F-C9E4-54B5-6C8CC0285105}|ProjetoNilson4\\ProjetoNilson4.csproj|solutionrelative:projetonilson4\\areas\\colaborador\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{04DC0D58-899F-C9E4-54B5-6C8CC0285105}|ProjetoNilson4\\ProjetoNilson4.csproj|c:\\users\\scola\\onedrive\\\u00E1rea de trabalho\\projetoniveislogin\\projetonilson4\\repository\\clienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{04DC0D58-899F-C9E4-54B5-6C8CC0285105}|ProjetoNilson4\\ProjetoNilson4.csproj|solutionrelative:projetonilson4\\repository\\clienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04DC0D58-899F-C9E4-54B5-6C8CC0285105}|ProjetoNilson4\\ProjetoNilson4.csproj|c:\\users\\scola\\onedrive\\\u00E1rea de trabalho\\projetoniveislogin\\projetonilson4\\areas\\colaborador\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04DC0D58-899F-C9E4-54B5-6C8CC0285105}|ProjetoNilson4\\ProjetoNilson4.csproj|solutionrelative:projetonilson4\\areas\\colaborador\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{04DC0D58-899F-C9E4-54B5-6C8CC0285105}|ProjetoNilson4\\ProjetoNilson4.csproj|c:\\users\\scola\\onedrive\\\u00E1rea de trabalho\\projetoniveislogin\\projetonilson4\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04DC0D58-899F-C9E4-54B5-6C8CC0285105}|ProjetoNilson4\\ProjetoNilson4.csproj|solutionrelative:projetonilson4\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04DC0D58-899F-C9E4-54B5-6C8CC0285105}|ProjetoNilson4\\ProjetoNilson4.csproj|c:\\users\\scola\\onedrive\\\u00E1rea de trabalho\\projetoniveislogin\\projetonilson4\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{04DC0D58-899F-C9E4-54B5-6C8CC0285105}|ProjetoNilson4\\ProjetoNilson4.csproj|solutionrelative:projetonilson4\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{04DC0D58-899F-C9E4-54B5-6C8CC0285105}|ProjetoNilson4\\ProjetoNilson4.csproj|c:\\users\\scola\\onedrive\\\u00E1rea de trabalho\\projetoniveislogin\\projetonilson4\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,17 +38,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\scola\\OneDrive\\\u00C1rea de Trabalho\\ProjetoNiveisLogin\\ProjetoNilson4\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "ProjetoNilson4\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\scola\\OneDrive\\\u00C1rea de Trabalho\\ProjetoNiveisLogin\\ProjetoNilson4\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "ProjetoNilson4\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAADkAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-10-20T11:52:42.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\scola\\OneDrive\\\u00C1rea de Trabalho\\ProjetoNiveisLogin\\ProjetoNilson4\\Areas\\Colaborador\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "ProjetoNilson4\\Areas\\Colaborador\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\scola\\OneDrive\\\u00C1rea de Trabalho\\ProjetoNiveisLogin\\ProjetoNilson4\\Areas\\Colaborador\\Controllers\\HomeController.cs",
               "RelativeToolTip": "ProjetoNilson4\\Areas\\Colaborador\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAA3wAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-20T11:48:29.556Z",
               "EditorCaption": ""
@@ -64,20 +81,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "ClienteController.cs",
               "DocumentMoniker": "C:\\Users\\scola\\OneDrive\\\u00C1rea de Trabalho\\ProjetoNiveisLogin\\ProjetoNilson4\\Controllers\\ClienteController.cs",
               "RelativeDocumentMoniker": "ProjetoNilson4\\Controllers\\ClienteController.cs",
               "ToolTip": "C:\\Users\\scola\\OneDrive\\\u00C1rea de Trabalho\\ProjetoNiveisLogin\\ProjetoNilson4\\Controllers\\ClienteController.cs",
               "RelativeToolTip": "ProjetoNilson4\\Controllers\\ClienteController.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAYwCoAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-20T11:45:55.941Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ClienteController.cs",
               "DocumentMoniker": "C:\\Users\\scola\\OneDrive\\\u00C1rea de Trabalho\\ProjetoNiveisLogin\\ProjetoNilson4\\Areas\\Colaborador\\Controllers\\ClienteController.cs",
               "RelativeDocumentMoniker": "ProjetoNilson4\\Areas\\Colaborador\\Controllers\\ClienteController.cs",
@@ -85,12 +102,11 @@
               "RelativeToolTip": "ProjetoNilson4\\Areas\\Colaborador\\Controllers\\ClienteController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-20T11:45:49.048Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-20T11:45:49.048Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "IClienteRepository.cs",
               "DocumentMoniker": "C:\\Users\\scola\\OneDrive\\\u00C1rea de Trabalho\\ProjetoNiveisLogin\\ProjetoNilson4\\Repository\\Contract\\IClienteRepository.cs",
               "RelativeDocumentMoniker": "ProjetoNilson4\\Repository\\Contract\\IClienteRepository.cs",
@@ -98,12 +114,11 @@
               "RelativeToolTip": "ProjetoNilson4\\Repository\\Contract\\IClienteRepository.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T11:29:34.881Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-12T11:29:34.881Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\scola\\OneDrive\\\u00C1rea de Trabalho\\ProjetoNiveisLogin\\ProjetoNilson4\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "ProjetoNilson4\\Controllers\\HomeController.cs",
@@ -111,8 +126,7 @@
               "RelativeToolTip": "ProjetoNilson4\\Controllers\\HomeController.cs",
               "ViewState": "AgIAAEkAAAAAAAAAAADwv1wAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-20T11:45:02.639Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-20T11:45:02.639Z"
             }
           ]
         }

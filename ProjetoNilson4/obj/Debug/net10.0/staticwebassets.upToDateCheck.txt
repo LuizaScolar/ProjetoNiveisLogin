@@ -1,4 +1,3 @@
-wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\img\Projeto-Login.webp
 wwwroot\js\site.js
@@ -353,7 +352,7 @@ wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\images\icons\pay-ba
 wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\images\Thumbs.db
 wwwroot\resources\lib\bootstrap-ecommerce-uikit\_bootstrap-ecommerce.com.url
 wwwroot\resources\lib\bootstrap-ecommerce-uikit\_readme.txt
-C:\Users\scola\OneDrive\Área de Trabalho\ProjetoNiveisLogin\ProjetoNilson4\wwwroot\css\site.css
+wwwroot\css\site.css
 C:\Users\scola\OneDrive\Área de Trabalho\ProjetoNiveisLogin\ProjetoNilson4\wwwroot\favicon.ico
 C:\Users\scola\OneDrive\Área de Trabalho\ProjetoNiveisLogin\ProjetoNilson4\wwwroot\js\site.js
 C:\Users\scola\OneDrive\Área de Trabalho\ProjetoNiveisLogin\ProjetoNilson4\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
@@ -509,3 +508,4 @@ C:\Users\scola\OneDrive\Área de Trabalho\ProjetoNiveisLogin\ProjetoNilson4\wwwr
 C:\Users\scola\OneDrive\Área de Trabalho\ProjetoNiveisLogin\ProjetoNilson4\wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\images\banners\bg-pattern.svg
 C:\Users\scola\OneDrive\Área de Trabalho\ProjetoNiveisLogin\ProjetoNilson4\wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\images\favicon.ico
 C:\Users\scola\OneDrive\Área de Trabalho\ProjetoNiveisLogin\ProjetoNilson4\wwwroot\resources\lib\bootstrap-ecommerce-uikit\_readme.txt
+C:\Users\scola\OneDrive\Área de Trabalho\ProjetoNiveisLogin\ProjetoNilson4\wwwroot\css\site.css

@@ -85,8 +85,8 @@ namespace ProjetoNilson4.Repository
                 cmd.Parameters.Add("@Nome", MySqlDbType.VarChar).Value = cliente.Nome;
                 cmd.Parameters.Add("@Nascimento", MySqlDbType.DateTime).Value = cliente.Nascimento.ToString("yyyy/MM/dd");
                 cmd.Parameters.Add("@Sexo", MySqlDbType.VarChar).Value = cliente.Sexo;
-                cmd.Parameters.Add("@CPF", MySqlDbType.VarChar).Value = cliente.CPF;
-                cmd.Parameters.Add("@Telefone", MySqlDbType.VarChar).Value = cliente.Telefone;
+                cmd.Parameters.Add("@CPF", MySqlDbType.VarChar).Value = cliente.CPF.Replace("-", "").Replace(".", "");
+                cmd.Parameters.Add("@Telefone", MySqlDbType.VarChar).Value = cliente.Telefone.Replace("(", "").Replace(")", "").Replace("-", "");
                 cmd.Parameters.Add("@Email", MySqlDbType.VarChar).Value = cliente.Email;
                 cmd.Parameters.Add("@Senha", MySqlDbType.VarChar).Value = cliente.Senha;
                 cmd.Parameters.Add("@ConfirmacaoSenha", MySqlDbType.VarChar).Value = cliente.ConfirmacaoSenha;
@@ -208,6 +208,45 @@ namespace ProjetoNilson4.Repository
                 cmd.Parameters.Add("@Situacao", MySqlDbType.VarChar).Value = Situacao;
                 cmd.ExecuteNonQuery();
                 conexao.Close();
+            }
+        }
+        public Cliente BuscaCpfCliente(string CPF)
+        {
+            using (var conexao = new MySqlConnection(_conexaoMySQL))
+            {
+                conexao.Open();
+                MySqlCommand cmd = new MySqlCommand("select CPF from Cliente where CPF=@CPF", conexao);
+                cmd.Parameters.AddWithValue("@CPF", CPF);
+                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                MySqlDataReader dr;
+
+                Cliente cliente = new Cliente();
+                dr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
+                while (dr.Read())
+                {
+                    cliente.CPF = (string)(dr["CPF"]);
+                }
+                return cliente;
+            }
+        }
+        public Cliente BuscaEmailCliente(string email)
+        {
+            using (var conexao = new MySqlConnection(_conexaoMySQL))
+            {
+                conexao.Open();
+                MySqlCommand cmd = new MySqlCommand("select Email from Cliente where Email = @Email", conexao);
+                cmd.Parameters.AddWithValue("@Email", email);
+
+                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                MySqlDataReader dr;
+
+                Cliente cliente = new Cliente();
+                dr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
+                while (dr.Read())
+                {
+                    cliente.Email = (string)(dr["Email"]);
+                }
+                return cliente;
             }
         }
     }

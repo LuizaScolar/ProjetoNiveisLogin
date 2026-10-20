@@ -68,7 +68,14 @@ namespace ProjetoNilson4.Repository
 
         public void Excluir(int Id)
         {
-            throw new NotImplementedException();
+            using(var conexao = new MySqlConnection(_conexaoMySQL))
+            {
+                conexao.Open();
+                MySqlCommand cmd = new MySqlCommand("delete from Colaborador where Id = @Id", conexao);
+                cmd.Parameters.AddWithValue("@Id", Id);
+                cmd.ExecuteNonQuery();
+                conexao.Close();
+            }
         }
 
         public Colaborador Login(string Email, string Senha)

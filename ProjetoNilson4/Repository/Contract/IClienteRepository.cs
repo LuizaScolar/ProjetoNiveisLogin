@@ -21,5 +21,7 @@ namespace ProjetoNilson4.Repository.Contract
         IPagedList<Cliente> ObterTodosClientes(int? pagina, string pesquisa);
         void Ativar(int id);
         void Desativar(int id);
+        Cliente BuscaCpfCliente(string CPF);
+        Cliente BuscaEmailCliente(string email);
     }
 }

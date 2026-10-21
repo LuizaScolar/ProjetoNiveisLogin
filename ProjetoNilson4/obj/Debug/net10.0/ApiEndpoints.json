@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "ContainingType": "ProjetoNilson4.Areas.Colaborador.Controllers.API.ClienteApiController",
+    "Method": "ListarClientes",
+    "RelativePath": "api/ClienteApi",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

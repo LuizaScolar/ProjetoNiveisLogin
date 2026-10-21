@@ -1,0 +1,27 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "ProjetoNilson4",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/ClienteApi": {
+      "get": {
+        "tags": [
+          "ClienteApi"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": { },
+  "tags": [
+    {
+      "name": "ClienteApi"
+    }
+  ]
+}

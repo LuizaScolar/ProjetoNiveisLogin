@@ -27,9 +27,16 @@ builder.Services.AddSession(options =>
 });
 builder.Services.AddMvc().AddSessionStateTempDataProvider();
 
-
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -39,6 +46,8 @@ if (!app.Environment.IsDevelopment())
 app.UseRouting();
 
 app.UseAuthorization();
+
+app.MapControllers();
 
 app.MapStaticAssets();
 
